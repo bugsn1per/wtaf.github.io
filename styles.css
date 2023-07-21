@@ -4,7 +4,7 @@ header.banner {
   position: relative; /* Set the banner to relative position so we can position the Voronoi background */ 
   background-color: #383e42; /* Dark background color for the Voronoi background to blend */
   color: #ffffff; /* Text color for the Hero content */
-  text-align: center; /* Center align the Hero content vertically and horizontally */
+  text-align: centre; /* Center align the Hero content vertically and horizontally */
   padding: 50px 0; /* Add padding to the top and bottom for better spacing */
   z-index: 2; /* Set a higher z-index to ensure the banner is in front of the Voronoi background */
 }
@@ -20,6 +20,20 @@ header.banner {
   color: #ffffff;
   text-align: center;
   padding: 100px 0;
+}
+
+body {
+  margin: 0;
+}
+.swiper-container {
+  width: 90vw;
+  height: 100vh;
+/*   background: #fd5; */
+}
+.swiper-slide img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /* Read More Section styles */
@@ -273,4 +287,5 @@ section.full-text p {
 @media (min-width: 1024px) {
   /* Add specific styles for larger devices if needed */
 }
+
 
