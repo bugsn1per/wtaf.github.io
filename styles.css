@@ -4,7 +4,7 @@ header.banner {
   position: relative; /* Set the banner to relative position so we can position the Voronoi background */ 
   background-color: #383e42; /* Dark background color for the Voronoi background to blend */
   color: #ffffff; /* Text color for the Hero content */
-  text-align: centre; /* Center align the Hero content vertically and horizontally */
+  text-align: left; /* Center align the Hero content vertically and horizontally */
   padding: 50px 0; /* Add padding to the top and bottom for better spacing */
   z-index: 2; /* Set a higher z-index to ensure the banner is in front of the Voronoi background */
 }
