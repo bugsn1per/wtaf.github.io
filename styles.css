@@ -22,6 +22,25 @@ header.banner {
   padding: 100px 0;
 }
 
+/* Center the text and add spacing between image and text */
+.full-text-content {
+  max-width: 600px; /* Limit the maximum width of the text content */
+  margin: 0 auto; /* Center the text content horizontally */
+  text-align: center; /* Center the text content */
+}
+
+.full-text-image {
+  max-width: 600px; /* Limit the maximum width of the image container */
+  margin-left: 40px; /* Add spacing between the image and text */
+  float: left; /* Float the image container to the left */
+}
+
+.full-text-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px; /* Add a subtle border-radius to the image */
+}
+
 body {
   margin: 0;
 }
