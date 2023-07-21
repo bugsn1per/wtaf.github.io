@@ -1,0 +1,276 @@
+
+/* Header (Banner) styles */
+header.banner {
+  position: relative; /* Set the banner to relative position so we can position the Voronoi background */ 
+  background-color: #383e42; /* Dark background color for the Voronoi background to blend */
+  color: #ffffff; /* Text color for the Hero content */
+  text-align: center; /* Center align the Hero content vertically and horizontally */
+  padding: 50px 0; /* Add padding to the top and bottom for better spacing */
+  z-index: 2; /* Set a higher z-index to ensure the banner is in front of the Voronoi background */
+}
+
+/* Center align the h1 text in the banner */
+.banner-content h1 {
+  display: inline-block;
+}
+
+/* First Section */
+.first-section {
+  background-color: #333333;
+  color: #ffffff;
+  text-align: center;
+  padding: 100px 0;
+}
+
+/* Read More Section styles */
+section.read-more {
+  padding: 50px 0;
+  text-align: center;
+  background-color: #130c0c; /* Light background color */
+}
+
+section.read-more h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+section.read-more p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+section.read-more a {
+  font-size: 1.2rem;
+  color: #333333; /* Dark color for the "Read More" link */
+}
+
+/* Full Text Section styles */
+section.full-text {
+  padding: 50px 0;
+  background-color: #f0f0f0; /* Light background color for the Full Text section */
+  text-align: center;
+}
+
+section.full-text h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: #333333; /* Dark color for the heading */
+}
+
+section.full-text p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #666666; /* Slightly lighter color for the paragraphs */
+  text-align: left;
+}
+
+.container {
+  display: flex; /* Use flexbox to arrange the image and content side by side */
+  flex-direction: row-reverse; /* Reverse the order of the items (image on the left, content on the right) */
+  justify-content: space-between; /* Create space between the items */
+  align-items: center; /* Center items vertically */
+}
+
+.full-text-content {
+  max-width: 600px; /* Limit the maximum width of the text content */
+}
+
+.full-text-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px; /* Add a subtle border-radius to the image */
+}
+
+
+
+/* Voronoi Background styles */
+.voronoi-background {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  background-size: 20px; /* Adjust the Voronoi cell size for larger devices */
+}
+
+
+/* About Section styles */
+section.about {
+  padding: 50px 0;
+  background-color: #ffffff; /* White background color for the About section */
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  max-width: 1200px; /* Limit the maximum width of the container */
+  margin: 0 auto; /* Center the container horizontally */
+}
+
+.about-content {
+  flex: 1;
+  padding: 20px;
+  text-align: left;
+}
+
+.about-content h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #333333; /* Dark color for the heading */
+}
+
+.about-content p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #666666; /* Slightly lighter color for the paragraphs */
+}
+
+.about-content a {
+  font-size: 1.2rem;
+  color: #007bff; /* Blue color for the "Read More" link */
+  text-decoration: none;
+}
+
+.about-content a:hover {
+  text-decoration: underline; /* Underline the link on hover */
+}
+
+.about-image {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.about-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px; /* Add a subtle border-radius to the image */
+}
+
+/* Footer Section styles */
+footer.footer {
+  background-color: #333333; /* Dark gray background color for the footer */
+  color: #ffffff; /* White text color for the footer content */
+  padding: 20px;
+  text-align: center;
+}
+
+footer.footer p {
+  font-size: 1rem;
+  margin: 5px 0;
+}
+
+
+/* First Section (with Voronoi background) styles */
+section.first-section {
+  position: relative;
+  background-color: #333333;
+  color: #ffffff;
+  text-align: center;
+  padding: 100px 0;
+}
+
+section.first-section h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+section.first-section p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+/* Full Text Section styles */
+section.full-text {
+  padding: 50px 0;
+  background-color: #f0f0f0; /* Light background color for the Full Text section */
+  text-align: center;
+}
+
+section.full-text h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: #333333; /* Dark color for the heading */
+}
+
+section.full-text p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #666666; /* Slightly lighter color for the paragraphs */
+  text-align: left;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.container::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.full-text-content {
+  max-width: 600px; /* Limit the maximum width of the text content */
+  float: left; /* Float the text content to the left */
+}
+
+.full-text-image {
+  max-width: 600px; /* Limit the maximum width of the image container */
+  float: right; /* Float the image container to the right */
+}
+
+.full-text-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px; /* Add a subtle border-radius to the image */
+}
+
+
+/* Responsive adjustments for different screen sizes */
+
+/* For phones and small devices */
+@media (max-width: 767px) {
+  section.first-section .container,
+  section.full-text .container {
+    flex-direction: column; /* Stack the content vertically on small devices */
+  }
+
+  .full-text-content,
+  .full-text-image {
+    float: none; /* Remove the float for stacked layout on small devices */
+  }
+
+  .full-text-content {
+    text-align: center; /* Center the text content on small devices */
+  }
+
+  .full-text-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px; /* Add a subtle border-radius to the image */
+    margin-bottom: 20px; /* Add some space between the text and the image on small devices */
+  }
+}
+
+/* For tablets and medium-sized devices */
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* Add specific styles for medium-sized devices if needed */
+}
+
+/* For larger devices (laptops, desktops) */
+@media (min-width: 1024px) {
+  /* Add specific styles for larger devices if needed */
+}
+
