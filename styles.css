@@ -45,7 +45,8 @@ header {
 
 /* Hero section styles */
 .hero {
-    background: url('Main_image.jpeg') no-repeat center center/cover;
+    background: url('Main_image.jpeg') no-repeat center center;
+    background-size: cover; /* Ensures the image covers the entire container */
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -56,33 +57,18 @@ header {
     padding: 20px;
 }
 
-.hero-text {
-    margin-bottom: 20px;
+@media only screen and (max-width: 768px) {
+    /* Adjust background image for smaller screens (e.g., tablets and phones) */
+    .hero {
+        background-size: auto 100%; /* Adjust background size to cover width and scale height */
+    }
 }
 
-.hero h1 {
-    font-size: 3em; /* Example font size */
-    margin-bottom: 10px; /* Improve spacing */
-}
-
-.hero h2 {
-    font-size: 2em; /* Example font size */
-    margin-bottom: 20px; /* Improve spacing */
-}
-
-.cta-button {
-    background-color: #ffd000; /* Adjusted color */
-    color: white;
-    padding: 15px 30px;
-    text-decoration: none;
-    font-size: 1.2em;
-    border-radius: 5px;
-    margin-top: 20px;
-    transition: background-color 0.3s ease;
-}
-
-.cta-button:hover {
-    background-color: #ffd000cc; /* Adjusted hover color */
+@media only screen and (max-width: 480px) {
+    /* Further adjustments for smaller phones */
+    .hero {
+        background-size: cover; /* Revert to cover for very small screens */
+    }
 }
 
 /* Footer styles (if needed) */
