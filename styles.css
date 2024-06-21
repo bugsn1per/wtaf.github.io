@@ -43,6 +43,31 @@ header {
     height: auto; /* Maintain aspect ratio */
 }
 
+/* Button styles */
+.cta-button {
+    background-color: #ffd000; /* Button background color */
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+    display: inline-block; /* Ensures button respects padding */
+}
+
+.cta-button:hover {
+    background-color: #ffd000cc; /* Button hover background color */
+}
+
+/* Adjust button for smaller screens */
+@media only screen and (max-width: 480px) {
+    .cta-button {
+        font-size: 1em; /* Adjust font size for smaller screens */
+        padding: 12px 24px; /* Adjust padding for smaller screens */
+    }
+}
+
 /* Hero section styles */
 .hero {
     background: url('Main_image.jpeg') no-repeat center center;
